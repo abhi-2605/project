@@ -58,7 +58,7 @@ jobs:
           docker run \
             -v $(pwd):/runtime \
             deezer/${{ env.image }}:${{ matrix.distribution }} \
-            separate -o /tmp /runtime/audio_example.mp3
+            separate -o /tmp /runtime/kathakali.mp3
       - name: Docker login
         run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
       - name: Push deezer/${{ env.image }}:${{ matrix.distribution }} image
@@ -120,7 +120,7 @@ jobs:
           docker run \
             -v $(pwd):/runtime \
             deezer/${{ env.image }}:${{ matrix.distribution }} \
-            separate -o /tmp -p spleeter:${{ matrix.model }} /runtime/audio_example.mp3
+            separate -o /tmp -p spleeter:${{ matrix.model }} /runtime/kathakali.mp3
       - name: Docker login
         run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
       - name: Push deezer/${{ env.image }}:${{ matrix.distribution }}-${{ matrix.model }} image

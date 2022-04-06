@@ -22,7 +22,7 @@ import numpy as np
 import ffmpeg
 # pylint: enable=import-error
 
-TEST_AUDIO_DESCRIPTOR = 'audio_example.mp3'
+TEST_AUDIO_DESCRIPTOR = 'kathakali.mp3'
 TEST_OFFSET = 0
 TEST_DURATION = 600.
 TEST_SAMPLE_RATE = 44100

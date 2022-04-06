@@ -48,7 +48,7 @@ RUN apt-get update \
 
 RUN mkdir -p /model
 ENV MODEL_PATH /model
-COPY audio_example.mp3 .
+COPY kathakali.mp3 .
 
 # Spleeter installation.
 RUN apt-get update && apt-get install -y ffmpeg libsndfile1

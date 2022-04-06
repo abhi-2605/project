@@ -20,7 +20,7 @@ from spleeter import SpleeterError
 from spleeter.audio.adapter import AudioAdapter
 from spleeter.separator import Separator
 
-TEST_AUDIO_DESCRIPTORS = ['audio_example.mp3', 'audio_example_mono.mp3']
+TEST_AUDIO_DESCRIPTORS = ['kathakali.mp3','audio_example.mp3' 'audio_example_mono.mp3']
 BACKENDS = ["tensorflow", "librosa"]
 MODELS = ['spleeter:2stems', 'spleeter:4stems', 'spleeter:5stems']
 
